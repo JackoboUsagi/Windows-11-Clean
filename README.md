@@ -1,4 +1,4 @@
-# W11-Cleanup
+# Windows 11 Clean
 Astuces pour améliorer l'expérience Utilisateur sous Windows 11
 
 ![alt text](https://raw.githubusercontent.com/Jackobo-Usagi/W11-Cleanup/main/w11.png)
