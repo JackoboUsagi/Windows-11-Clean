@@ -221,3 +221,11 @@ sc stop "perceptionsimulation" && sc config "spectrum" start= disabled
 sc stop "TermService" && sc config "TermService" start= disabled
 ```
 
+__Catégorie "Google Chrome" - Désactivation de la mise à jour automatique:__
+```
+sc stop "gupdate" && sc config "gupdate" start= disabled
+sc stop "gupdatem" && sc config "gupdatem" start= disabled
+reg add HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\Update /v UpdateDefault /t REG_DWORD /d 0 /f
+reg add HKEY_LOCAL_MACHINE\Software\WOW6432Node\Google\Update /v UpdateDefault /t REG_DWORD /d 0 /f
+copy NUL "C:\Program Files (x86)\Google\Update\GoogleUpdate.exe"
+```
