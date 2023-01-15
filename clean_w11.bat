@@ -99,7 +99,7 @@ sc stop "spectrum" && sc config "spectrum" start= disabled
 sc stop "perceptionsimulation" && sc config "spectrum" start= disabled
 sc stop "TermService" && sc config "TermService" start= disabled
 
-REM Disable Google Chrome Updates
+REM Désactiver les mises à jour automatiques de Google Chrome
 
 sc stop "gupdate" && sc config "gupdate" start= disabled
 sc stop "gupdatem" && sc config "gupdatem" start= disabled
