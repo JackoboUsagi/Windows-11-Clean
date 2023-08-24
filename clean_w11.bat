@@ -98,6 +98,7 @@ sc stop "SharedRealitySvc" && sc config "SharedRealitySvc" start= disabled
 sc stop "spectrum" && sc config "spectrum" start= disabled
 sc stop "perceptionsimulation" && sc config "spectrum" start= disabled
 sc stop "TermService" && sc config "TermService" start= disabled
+sc stop "WSearch" && sc config "WSearch" start= disabled
 
 REM Désactiver les mises à jour automatiques de Google Chrome
 
