@@ -197,7 +197,6 @@ __Catégorie "Services" - Désactivation des services suivants:__
 - perceptionsimulation : Service de simulation de perception Windows ( Réalité virtuelle )
 - TermService : Service Bureau à distance
 - WSearch : Service Windows Search
-- 
 ```
 sc stop "DiagTrack" && sc config "DiagTrack" start= disabled
 sc stop "dmwappushservice" && sc config "dmwappushservice" start= disabled
