@@ -195,8 +195,9 @@ __Catégorie "Services" - Désactivation des services suivants:__
 - SharedRealitySvc : Service de données spatiales ( Réalité virtuelle )
 - spectrum : Service de perception Windows ( Réalité virtuelle )
 - perceptionsimulation : Service de simulation de perception Windows ( Réalité virtuelle )
-- TermService : Services Bureau à distance
-
+- TermService : Service Bureau à distance
+- WSearch : Service Windows Search
+- 
 ```
 sc stop "DiagTrack" && sc config "DiagTrack" start= disabled
 sc stop "dmwappushservice" && sc config "dmwappushservice" start= disabled
@@ -219,6 +220,7 @@ sc stop "SharedRealitySvc" && sc config "SharedRealitySvc" start= disabled
 sc stop "spectrum" && sc config "spectrum" start= disabled
 sc stop "perceptionsimulation" && sc config "spectrum" start= disabled
 sc stop "TermService" && sc config "TermService" start= disabled
+sc stop "WSearch" && sc config "WSearch" start= disabled
 ```
 
 __Catégorie "Google Chrome" - Désactivation de la mise à jour automatique:__
